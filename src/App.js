@@ -4,6 +4,7 @@ import ExercisesList from './components/ExercisesList'
 
 const App = () => (
   <>
+    <h1>Pipeline Verification: Success!</h1>
     <NavBar />
     <ExercisesList />
   </>
