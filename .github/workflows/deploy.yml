@@ -25,5 +25,9 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/simple-web-app:latest
 
-      - name: Trigger Render Deploy
-        run: curl "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+      - name: Render Deploy Action
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.RENDER_API_KEY }}      
+          deploy-hook: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
