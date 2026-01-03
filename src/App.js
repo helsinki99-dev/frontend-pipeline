@@ -6,7 +6,7 @@ const App = () => (
       PIPELINE SUCCESS!
     </h1>
     <h2>
-      Automation works.
+      Automation works (2).
     </h2>
   </div>
 )
