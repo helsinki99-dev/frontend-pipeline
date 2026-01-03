@@ -26,4 +26,4 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/simple-web-app:latest
 
       - name: Trigger Render Deploy
-              run: curl "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+        run: curl "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
